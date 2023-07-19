@@ -1,0 +1,93 @@
+body{
+    background-image: url(../Img/patobranco.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    overflow: hidden;
+}
+
+.area-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 2, 88);
+    padding: 35px;
+    border-radius: 10px;
+
+}
+
+.cadastro form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cadastro input{
+    margin-top: 10px;
+    background-color: white;
+    color: green;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.cadastro img{
+    width: 280px;
+    height: auto;
+}
+
+input::placeholder{
+    color: green;
+    font-size: 14px;
+}
+
+form [type="submit"]{
+    display: block;
+    background-color: #5568FE;
+    font-size: 14px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+form:hover [type="submit"]{
+    animation-name: animacao-botao;
+    animation-duration: 3s;
+    
+}
+
+#bt1{
+    display: block;
+    background-color: #5568FE;
+    font-size: 14px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration-line: none;
+    height: 45px;
+    border-radius: 6px;
+    margin-top: 10px;
+    border: none;
+}
+
+#bt1:hover{
+    animation-name: animacao-botao;
+    animation-duration: 3s;
+}
+
+@keyframes animacao-botao{
+    0% { background-color: rgb(29, 2, 88); }
+    50% { background-color: rgb(101, 4, 205); }
+    
+}
